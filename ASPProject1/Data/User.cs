@@ -12,9 +12,9 @@ namespace ASPProject1.Data
 
         public string Fullname { get; set; }
 
-        public string Massage { get; set; }
+        public string Message { get; set; }
         public DateTime DateReg { get; set; }
-        public DateTime Datemass { get; set; }
+        public DateTime DateMess { get; set; }
 
         public RoleType Role { get; set; }
 

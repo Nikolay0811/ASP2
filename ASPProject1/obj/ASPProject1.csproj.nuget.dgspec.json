@@ -67,6 +67,10 @@
               "target": "Package",
               "version": "[5.0.12, )"
             },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[5.0.14, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Contracts": {
               "target": "Package",
               "version": "[5.0.2, )"

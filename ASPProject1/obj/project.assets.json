@@ -11,7 +11,7 @@
           "lib/netstandard2.0/Humanizer.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Cryptography.Internal/5.0.12": {
+      "Microsoft.AspNetCore.Cryptography.Internal/5.0.14": {
         "type": "package",
         "compile": {
           "lib/net5.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {}
@@ -20,10 +20,10 @@
           "lib/net5.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Cryptography.KeyDerivation/5.0.12": {
+      "Microsoft.AspNetCore.Cryptography.KeyDerivation/5.0.14": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Cryptography.Internal": "5.0.12"
+          "Microsoft.AspNetCore.Cryptography.Internal": "5.0.14"
         },
         "compile": {
           "lib/net5.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": {}
@@ -644,10 +644,10 @@
           "buildMultiTargeting/_._": {}
         }
       },
-      "Microsoft.Extensions.Identity.Core/5.0.12": {
+      "Microsoft.Extensions.Identity.Core/5.0.14": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "5.0.12",
+          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "5.0.14",
           "Microsoft.Extensions.Logging": "5.0.0",
           "Microsoft.Extensions.Options": "5.0.0"
         },
@@ -2163,10 +2163,10 @@
         "logo.png"
       ]
     },
-    "Microsoft.AspNetCore.Cryptography.Internal/5.0.12": {
-      "sha512": "HLu2mxPH/Imi2DJG2QGU+xLh7WG2sr6b3gVKUW0FuguKpZzi3n482lO1DMgSbt6kJxlANd71gP9pqI8JT/+W+g==",
+    "Microsoft.AspNetCore.Cryptography.Internal/5.0.14": {
+      "sha512": "XHHWcCuxqZ5y3x2GUnBtZ9UuoTKiVDPoqb5jWOmKF1vhf0By6bhLX+y87quI9VFw3hXIVwkhxwz/vi0mVqvh8A==",
       "type": "package",
-      "path": "microsoft.aspnetcore.cryptography.internal/5.0.12",
+      "path": "microsoft.aspnetcore.cryptography.internal/5.0.14",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2178,14 +2178,14 @@
         "lib/net5.0/Microsoft.AspNetCore.Cryptography.Internal.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.xml",
-        "microsoft.aspnetcore.cryptography.internal.5.0.12.nupkg.sha512",
+        "microsoft.aspnetcore.cryptography.internal.5.0.14.nupkg.sha512",
         "microsoft.aspnetcore.cryptography.internal.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Cryptography.KeyDerivation/5.0.12": {
-      "sha512": "FJH+5Nf8+7IqCqalmtJlm/ti0AHtO9Msp7A6Xq00hZicOglqZ91irajoM/cQA7gb2hwL5FxIJc0ALInJqdANNQ==",
+    "Microsoft.AspNetCore.Cryptography.KeyDerivation/5.0.14": {
+      "sha512": "xKJR6NaioIuCBAJGiDWsE2Tl4xtkVh2N2oFpNIJKYIekbfL4okjIxYHv6WcxUvMlZ+YzOH/TixpCtPIiDgBRxw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.cryptography.keyderivation/5.0.12",
+      "path": "microsoft.aspnetcore.cryptography.keyderivation/5.0.14",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2197,7 +2197,7 @@
         "lib/net5.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.xml",
-        "microsoft.aspnetcore.cryptography.keyderivation.5.0.12.nupkg.sha512",
+        "microsoft.aspnetcore.cryptography.keyderivation.5.0.14.nupkg.sha512",
         "microsoft.aspnetcore.cryptography.keyderivation.nuspec"
       ]
     },
@@ -3070,10 +3070,10 @@
         "tasks/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.Manifest.Task.dll"
       ]
     },
-    "Microsoft.Extensions.Identity.Core/5.0.12": {
-      "sha512": "JuQt97Ol2MWUsKML/1I0O1i8N8ynuDMACfzWVDl22aznXfqvtoUV+CjSw4slsOFK2FuhJLF2bYhmj3ndVUP1tg==",
+    "Microsoft.Extensions.Identity.Core/5.0.14": {
+      "sha512": "XC3m9oy5fKLwJ1wVijpWcgzSc2JB9cfkT0XaamGksMCqFl1QxlY9o20nUaExbYoaWp/3ERIwjAiWDk3b0UKk7A==",
       "type": "package",
-      "path": "microsoft.extensions.identity.core/5.0.12",
+      "path": "microsoft.extensions.identity.core/5.0.14",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3085,7 +3085,7 @@
         "lib/net5.0/Microsoft.Extensions.Identity.Core.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Identity.Core.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Identity.Core.xml",
-        "microsoft.extensions.identity.core.5.0.12.nupkg.sha512",
+        "microsoft.extensions.identity.core.5.0.14.nupkg.sha512",
         "microsoft.extensions.identity.core.nuspec"
       ]
     },
@@ -7447,6 +7447,7 @@
       "Microsoft.AspNetCore.Identity.UI >= 5.0.12",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.12",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.12",
+      "Microsoft.Extensions.Identity.Core >= 5.0.14",
       "Microsoft.VisualStudio.Web.CodeGeneration.Contracts >= 5.0.2",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2"
     ]
@@ -7518,6 +7519,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[5.0.12, )"
+          },
+          "Microsoft.Extensions.Identity.Core": {
+            "target": "Package",
+            "version": "[5.0.14, )"
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Contracts": {
             "target": "Package",
