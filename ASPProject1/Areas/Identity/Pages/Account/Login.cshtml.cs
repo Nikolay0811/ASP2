@@ -53,6 +53,7 @@ namespace ASPProject1.Areas.Identity.Pages.Account
 
             [Display(Name = "Remember me?")]
             public bool RememberMe { get; set; }
+            public string UserName { get; set; }
         }
 
         public async Task OnGetAsync(string returnUrl = null)

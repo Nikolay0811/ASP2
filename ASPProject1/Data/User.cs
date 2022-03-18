@@ -10,8 +10,8 @@ namespace ASPProject1.Data
     {
 
 
-        public string Fullname { get; set; }
-
+        public string FullName { get; set; }
+      
         public string Message { get; set; }
         public DateTime DateReg { get; set; }
         public DateTime DateMess { get; set; }
