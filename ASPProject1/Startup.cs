@@ -38,6 +38,12 @@ namespace ASPProject1
                 .AddDefaultTokenProviders();
 
             services.AddControllersWithViews();
+            services.AddAuthentication().AddFacebook(options =>
+            {
+                options.AppId = "454625873115957";
+                options.AppSecret = "7a4d95dd06a215dbebe845e1f7a05cf6";
+
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
