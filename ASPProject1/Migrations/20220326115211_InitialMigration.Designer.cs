@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ASPProject1.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220320071237_InitialMigration")]
+    [Migration("20220326115211_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -20,6 +20,24 @@ namespace ASPProject1.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.14")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+            modelBuilder.Entity("ASPProject1.Data.Messages", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("DateMess")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Message")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Messages");
+                });
 
             modelBuilder.Entity("ASPProject1.Data.News", b =>
                 {
@@ -105,9 +123,6 @@ namespace ASPProject1.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("DateMess")
-                        .HasColumnType("datetime2");
-
                     b.Property<DateTime>("DateReg")
                         .HasColumnType("datetime2");
 
@@ -127,9 +142,6 @@ namespace ASPProject1.Migrations
                     b.Property<DateTimeOffset?>("LockoutEnd")
                         .HasColumnType("datetimeoffset");
 
-                    b.Property<string>("Message")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -146,9 +158,6 @@ namespace ASPProject1.Migrations
 
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
-
-                    b.Property<int>("Role")
-                        .HasColumnType("int");
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
@@ -171,6 +180,21 @@ namespace ASPProject1.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers");
+                });
+
+            modelBuilder.Entity("MessagesUser", b =>
+                {
+                    b.Property<int>("Messages2Id")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UsersId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Messages2Id", "UsersId");
+
+                    b.HasIndex("UsersId");
+
+                    b.ToTable("MessagesUser");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -306,6 +330,21 @@ namespace ASPProject1.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
+                });
+
+            modelBuilder.Entity("MessagesUser", b =>
+                {
+                    b.HasOne("ASPProject1.Data.Messages", null)
+                        .WithMany()
+                        .HasForeignKey("Messages2Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ASPProject1.Data.User", null)
+                        .WithMany()
+                        .HasForeignKey("UsersId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

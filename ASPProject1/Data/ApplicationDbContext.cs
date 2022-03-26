@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using ASPProject1.Data;
 
 namespace ASPProject1.Data
 {
@@ -18,6 +19,8 @@ namespace ASPProject1.Data
         public DbSet<Repertoire> Repertories { get; set; }
 
         public DbSet<News> Newes { get; set; }
+
+        public DbSet<ASPProject1.Data.Messages> Messages { get; set; }
     
     }  
 }

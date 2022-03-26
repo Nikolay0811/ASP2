@@ -27,10 +27,7 @@ namespace ASPProject1.Migrations
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     FullName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Message = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     DateReg = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    DateMess = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Role = table.Column<int>(type: "int", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -49,6 +46,20 @@ namespace ASPProject1.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Messages",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Message = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DateMess = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Messages", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -205,6 +216,30 @@ namespace ASPProject1.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "MessagesUser",
+                columns: table => new
+                {
+                    Messages2Id = table.Column<int>(type: "int", nullable: false),
+                    UsersId = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_MessagesUser", x => new { x.Messages2Id, x.UsersId });
+                    table.ForeignKey(
+                        name: "FK_MessagesUser_AspNetUsers_UsersId",
+                        column: x => x.UsersId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_MessagesUser_Messages_Messages2Id",
+                        column: x => x.Messages2Id,
+                        principalTable: "Messages",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -243,6 +278,11 @@ namespace ASPProject1.Migrations
                 column: "NormalizedUserName",
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_MessagesUser_UsersId",
+                table: "MessagesUser",
+                column: "UsersId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -263,6 +303,9 @@ namespace ASPProject1.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
+                name: "MessagesUser");
+
+            migrationBuilder.DropTable(
                 name: "Newes");
 
             migrationBuilder.DropTable(
@@ -276,6 +319,9 @@ namespace ASPProject1.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
+
+            migrationBuilder.DropTable(
+                name: "Messages");
         }
     }
 }

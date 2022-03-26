@@ -69,10 +69,7 @@ namespace ASPProject1.Areas.Identity.Pages.Account
             
             [Display(Name = "UserName")]
             public string UserName { get; set; }
-            [Required]
-
-            [Display(Name = "Message")]
-            public string Message { get; set; }
+           
         }
 
         public async Task OnGetAsync(string returnUrl = null)
@@ -91,7 +88,7 @@ namespace ASPProject1.Areas.Identity.Pages.Account
                     UserName = Input.UserName ,
                     Email = Input.Email ,
                     FullName=Input.FullName,
-                    Message=Input.Message,
+                    
                 };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)

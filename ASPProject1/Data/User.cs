@@ -12,13 +12,13 @@ namespace ASPProject1.Data
 
         public string FullName { get; set; }
       
-        public string Message { get; set; }
-        public DateTime DateReg { get; set; }
-        public DateTime DateMess { get; set; }
-
-        public RoleType Role { get; set; }
-
         
+        public DateTime DateReg { get; set; }
+        public virtual ICollection<Messages> Messages2 { get; set; }
+
+
+
+
 
     }
 }
