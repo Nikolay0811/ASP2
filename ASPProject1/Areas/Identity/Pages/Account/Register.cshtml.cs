@@ -61,8 +61,17 @@ namespace ASPProject1.Areas.Identity.Pages.Account
             [Display(Name = "Confirm password")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
+            [Required]
+
+            [Display(Name = "FullName")]
             public string FullName { get; set; }
+            [Required]
+            
+            [Display(Name = "UserName")]
             public string UserName { get; set; }
+            [Required]
+
+            [Display(Name = "Message")]
             public string Message { get; set; }
         }
 
@@ -78,7 +87,12 @@ namespace ASPProject1.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new User { UserName = Input.UserName , Email = Input.Email };
+                var user = new User {
+                    UserName = Input.UserName ,
+                    Email = Input.Email ,
+                    FullName=Input.FullName,
+                    Message=Input.Message,
+                };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {

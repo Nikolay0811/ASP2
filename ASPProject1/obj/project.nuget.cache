@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V/aMHLoLVytUhi6IkjcJvFUE1+/YAafyZmFdku9g1gw2PPztJcPSZGrCGu56rQgfDDxKnyoitk9ksF87Ytp9qQ==",
+  "dgSpecHash": "YC2yZePDKbsKjswZPmWAH07f0L1mOpoHVdg1Bnnl1oNwJI/MIdAscnYBOk7aOgICtXmlrF9LfHWXdJFOXI1TjA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ники\\Desktop\\Asp1\\ASPProject1\\ASPProject1.csproj",
+  "projectFilePath": "C:\\Users\\ники\\Desktop\\ASP2\\ASPProject1\\ASPProject1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ники\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ники\\.nuget\\packages\\microsoft.aspnetcore.authentication.facebook\\5.0.14\\microsoft.aspnetcore.authentication.facebook.5.0.14.nupkg.sha512",

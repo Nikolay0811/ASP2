@@ -43,8 +43,10 @@ namespace ASPProject1.Areas.Identity.Pages.Account
 
         public class InputModel
         {
+            
             [Required]
-         
+
+            [Display(Name = "UserName")]
             public string UserName { get; set; }
 
             [Required]
