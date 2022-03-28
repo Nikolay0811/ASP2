@@ -34,7 +34,7 @@ namespace ASPProject1.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Messages");
+                    b.ToTable("Messages2");
                 });
 
             modelBuilder.Entity("ASPProject1.Data.News", b =>
@@ -156,6 +156,9 @@ namespace ASPProject1.Migrations
 
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
+
+                    b.Property<int>("Role")
+                        .HasColumnType("int");
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");

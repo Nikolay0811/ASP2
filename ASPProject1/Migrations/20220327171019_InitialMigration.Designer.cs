@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ASPProject1.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220326115211_InitialMigration")]
+    [Migration("20220327171019_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,7 +36,7 @@ namespace ASPProject1.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Messages");
+                    b.ToTable("Messages2");
                 });
 
             modelBuilder.Entity("ASPProject1.Data.News", b =>
@@ -158,6 +158,9 @@ namespace ASPProject1.Migrations
 
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
+
+                    b.Property<int>("Role")
+                        .HasColumnType("int");
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");

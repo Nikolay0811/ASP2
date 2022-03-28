@@ -33,9 +33,11 @@ namespace ASPProject1
             services.AddDatabaseDeveloperPageExceptionFilter();
             
 
-            services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true)
+            services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = false) 
+                .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
+                
 
             services.AddControllersWithViews();
             services.AddAuthentication().AddFacebook(options =>
@@ -49,6 +51,7 @@ namespace ASPProject1
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.PrepareDataBase().Wait();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

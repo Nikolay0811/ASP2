@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ASPProject1.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ASPProject1.Controllers
 {
+    [Authorize]
     public class MessagesController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -19,9 +21,11 @@ namespace ASPProject1.Controllers
         }
 
         // GET: Messages
+        [Authorize]
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Messages.ToListAsync());
+
+            return View(await _context.Messages2.ToListAsync());
         }
 
         // GET: Messages/Details/5
@@ -32,7 +36,7 @@ namespace ASPProject1.Controllers
                 return NotFound();
             }
 
-            var messages = await _context.Messages
+            var messages = await _context.Messages2
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (messages == null)
             {
@@ -53,6 +57,7 @@ namespace ASPProject1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "User, Admin")]
         public async Task<IActionResult> Create([Bind("Id,Message,DateMess")] Messages messages)
         {
             if (ModelState.IsValid)
@@ -72,7 +77,7 @@ namespace ASPProject1.Controllers
                 return NotFound();
             }
 
-            var messages = await _context.Messages.FindAsync(id);
+            var messages = await _context.Messages2.FindAsync(id);
             if (messages == null)
             {
                 return NotFound();
@@ -123,7 +128,7 @@ namespace ASPProject1.Controllers
                 return NotFound();
             }
 
-            var messages = await _context.Messages
+            var messages = await _context.Messages2
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (messages == null)
             {
@@ -138,15 +143,15 @@ namespace ASPProject1.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var messages = await _context.Messages.FindAsync(id);
-            _context.Messages.Remove(messages);
+            var messages = await _context.Messages2.FindAsync(id);
+            _context.Messages2.Remove(messages);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool MessagesExists(int id)
         {
-            return _context.Messages.Any(e => e.Id == id);
+            return _context.Messages2.Any(e => e.Id == id);
         }
     }
 }

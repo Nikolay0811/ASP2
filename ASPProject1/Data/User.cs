@@ -15,8 +15,8 @@ namespace ASPProject1.Data
         
         public DateTime DateReg { get; set; }
         public virtual ICollection<Messages> Messages2 { get; set; }
-
-
+        public RoleType Role { get; set; }
+        
 
 
 

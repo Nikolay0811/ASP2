@@ -28,6 +28,7 @@ namespace ASPProject1.Migrations
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     FullName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     DateReg = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Role = table.Column<int>(type: "int", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -49,7 +50,7 @@ namespace ASPProject1.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Messages",
+                name: "Messages2",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -59,7 +60,7 @@ namespace ASPProject1.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Messages", x => x.Id);
+                    table.PrimaryKey("PK_Messages2", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -233,9 +234,9 @@ namespace ASPProject1.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_MessagesUser_Messages_Messages2Id",
+                        name: "FK_MessagesUser_Messages2_Messages2Id",
                         column: x => x.Messages2Id,
-                        principalTable: "Messages",
+                        principalTable: "Messages2",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -321,7 +322,7 @@ namespace ASPProject1.Migrations
                 name: "AspNetUsers");
 
             migrationBuilder.DropTable(
-                name: "Messages");
+                name: "Messages2");
         }
     }
 }

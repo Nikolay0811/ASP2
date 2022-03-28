@@ -723,7 +723,6 @@ C:\Users\ники\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.dll
 C:\Users\ники\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\ref\ASPProject1.dll
 C:\Users\ники\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.pdb
 C:\Users\ники\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.genruntimeconfig.cache
-C:\Users\ники\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.csproj.AssemblyReference.cache
 C:\Users\ники\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Messages\Create.cshtml.g.cs
 C:\Users\ники\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Messages\Delete.cshtml.g.cs
 C:\Users\ники\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Messages\Details.cshtml.g.cs

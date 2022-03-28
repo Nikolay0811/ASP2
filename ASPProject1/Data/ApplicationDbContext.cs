@@ -10,8 +10,8 @@ namespace ASPProject1.Data
 {
     public class ApplicationDbContext : IdentityDbContext<User>
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-            : base(options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options): base(options)
+            
         {
 
         }
@@ -20,7 +20,7 @@ namespace ASPProject1.Data
 
         public DbSet<News> Newes { get; set; }
 
-        public DbSet<ASPProject1.Data.Messages> Messages { get; set; }
+        public DbSet<Messages> Messages2 { get; set; }
     
     }  
 }
