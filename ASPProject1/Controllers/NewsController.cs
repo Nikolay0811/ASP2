@@ -6,16 +6,23 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ASPProject1.Data;
+using System.IO;
+using ASPProject1.Models;
+using Microsoft.AspNetCore.Hosting;
 
 namespace ASPProject1.Controllers
 {
     public class NewsController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly IWebHostEnvironment _hostEnvironment;
+        private string wwwroot;
 
-        public NewsController(ApplicationDbContext context)
+        public NewsController(ApplicationDbContext context, IWebHostEnvironment hostEnvironment)
         {
             _context = context;
+            _hostEnvironment = hostEnvironment;
+            wwwroot = $"{this._hostEnvironment.WebRootPath}";
         }
 
         // GET: News
@@ -32,17 +39,27 @@ namespace ASPProject1.Controllers
                 return NotFound();
             }
 
-            var news = await _context.Newes
+            News product = await _context.Newes
+                .Include(img => img.NewsImages)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (news == null)
+            if (product == null)
             {
                 return NotFound();
             }
 
-            return View(news);
+            var imagePath = Path.Combine(wwwroot, "NewsImages");
+            NewsDetailsVM modelVM = new NewsDetailsVM()
+            {
+                Name = product.Name, 
+                Text = product.Text,
+                Data= product.Data,
+               
+                ImagesPaths = _context.NewsImages
+                .Where(img => img.NewsId == product.Id)
+                .Select(x => $"/NewsImages/{x.ImagePath}").ToList<string>()
+            };
+            return View(modelVM);
         }
-
-        // GET: News/Create
         public IActionResult Create()
         {
             return View();
@@ -53,15 +70,18 @@ namespace ASPProject1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Text,Fotos,Data")] News news)
+        public async Task<IActionResult> Create([FromForm] NewsVM news)
         {
-            if (ModelState.IsValid)
             {
-                _context.Add(news);
-                await _context.SaveChangesAsync();
+                if (!ModelState.IsValid)
+                {
+                    return View(news);
+                }
+
+                await this.CreateImages(news);
+
                 return RedirectToAction(nameof(Index));
             }
-            return View(news);
         }
 
         // GET: News/Edit/5
@@ -71,13 +91,71 @@ namespace ASPProject1.Controllers
             {
                 return NotFound();
             }
-
-            var news = await _context.Newes.FindAsync(id);
-            if (news == null)
+            //1. зареждам искания id от БД .... за промяна на стойностите
+            var product = await _context.Newes.FindAsync(id);
+            if (product == null)
             {
                 return NotFound();
             }
-            return View(news);
+            //2. Създавм модела, с който ще визуализирам за промяна на стойностите
+            //3. Пълня от БД в полетата на екрана
+            NewsDetailsVM model = new NewsDetailsVM
+            {
+                Id = product.Id,
+                Name = product.Name,
+                Text = product.Text,
+                Data = product.Data,
+
+                ImagesPaths = _context.NewsImages
+                .Where(img => img.NewsId == product.Id)
+                .Select(x => $"/NewsImages/{x.ImagePath}").ToList<string>()
+            };
+
+            return View(model);
+        }
+       
+      
+        public async Task CreateImages(NewsVM model)
+        {
+            News productToDb = new News()
+            {
+                Name = model.Name,
+                Text = model.Text,
+                Data=model.Data,
+                 
+            }; 
+            await _context.Newes.AddAsync(productToDb);
+            await this._context.SaveChangesAsync();
+
+            //var wwwroot = $"{this._hostEnvironment.WebRootPath}";
+            //създаваме папката images, ако не съществува
+            Directory.CreateDirectory($"{wwwroot}/NewsImages/");
+            var imagePath = Path.Combine(wwwroot, "NewsImages");
+            string uniqueFileName = null;
+            if (model.ImagePath.Count > 0)
+            {
+                for (int i = 0; i < model.ImagePath.Count; i++)
+                {
+                    NewsImages dbImage = new NewsImages()
+                    {
+                        NewsId = productToDb.Id,
+                        News = productToDb
+                    };//id се създава автоматично при създаване на обект
+                    if (model.ImagePath[i] != null)
+                    {
+                        uniqueFileName = dbImage.Id + "_" + model.ImagePath[i].FileName;
+                        string filePath = Path.Combine(imagePath, uniqueFileName);
+                        using (Stream fileStream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await model.ImagePath[i].CopyToAsync(fileStream);
+                        }
+
+                        dbImage.ImagePath = uniqueFileName;
+                        await _context.NewsImages.AddAsync(dbImage);
+                        await this._context.SaveChangesAsync();
+                    }
+                }
+            }
         }
 
         // POST: News/Edit/5
@@ -114,6 +192,7 @@ namespace ASPProject1.Controllers
             }
             return View(news);
         }
+      
 
         // GET: News/Delete/5
         public async Task<IActionResult> Delete(int? id)

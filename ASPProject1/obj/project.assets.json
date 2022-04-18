@@ -7481,26 +7481,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ники\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\student11\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ники\\Desktop\\ASP2\\ASPProject1\\ASPProject1.csproj",
+      "projectUniqueName": "D:\\My Projects\\ASP22\\ASPProject1\\ASPProject1.csproj",
       "projectName": "ASPProject1",
-      "projectPath": "C:\\Users\\ники\\Desktop\\ASP2\\ASPProject1\\ASPProject1.csproj",
-      "packagesPath": "C:\\Users\\ники\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ники\\Desktop\\ASP2\\ASPProject1\\obj\\",
+      "projectPath": "D:\\My Projects\\ASP22\\ASPProject1\\ASPProject1.csproj",
+      "packagesPath": "C:\\Users\\student11\\.nuget\\packages\\",
+      "outputPath": "D:\\My Projects\\ASP22\\ASPProject1\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ники\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\student11\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7583,7 +7576,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
       }
     }
   }

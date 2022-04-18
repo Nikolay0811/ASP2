@@ -24,7 +24,7 @@ namespace ASPProject1.Controllers
         [Authorize]
         public async Task<IActionResult> Index()
         {
-
+           
             return View(await _context.Messages2.ToListAsync());
         }
 

@@ -21,7 +21,9 @@ namespace ASPProject1.Data
         public DbSet<News> Newes { get; set; }
 
         public DbSet<Messages> Messages2 { get; set; }
-    
+        public DbSet<NewsImages> NewsImages { get; set; }
+
+        //ublic object News { get; internal set; }
     }  
 }
 

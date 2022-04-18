@@ -47,9 +47,6 @@ namespace ASPProject1.Migrations
                     b.Property<DateTime>("Data")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Fotos")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
@@ -59,6 +56,25 @@ namespace ASPProject1.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Newes");
+                });
+
+            modelBuilder.Entity("ASPProject1.Data.NewsImages", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ImagePath")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("NewsId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NewsId");
+
+                    b.ToTable("NewsImages");
                 });
 
             modelBuilder.Entity("ASPProject1.Data.Repertoire", b =>
@@ -333,6 +349,17 @@ namespace ASPProject1.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("ASPProject1.Data.NewsImages", b =>
+                {
+                    b.HasOne("ASPProject1.Data.News", "News")
+                        .WithMany("NewsImages")
+                        .HasForeignKey("NewsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("News");
+                });
+
             modelBuilder.Entity("MessagesUser", b =>
                 {
                     b.HasOne("ASPProject1.Data.Messages", null)
@@ -397,6 +424,11 @@ namespace ASPProject1.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("ASPProject1.Data.News", b =>
+                {
+                    b.Navigation("NewsImages");
                 });
 #pragma warning restore 612, 618
         }

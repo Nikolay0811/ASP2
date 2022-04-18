@@ -728,3 +728,566 @@ C:\Users\ники\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Messages
 C:\Users\ники\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Messages\Details.cshtml.g.cs
 C:\Users\ники\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Messages\Edit.cshtml.g.cs
 C:\Users\ники\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Messages\Index.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\appsettings.json
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\ASPProject1.StaticWebAssets.xml
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\ASPProject1.exe
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\ASPProject1.deps.json
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\ASPProject1.runtimeconfig.json
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\ASPProject1.runtimeconfig.dev.json
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\ASPProject1.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\ref\ASPProject1.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\ASPProject1.pdb
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\ASPProject1.Views.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\ASPProject1.Views.pdb
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Humanizer.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Facebook.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\System.Composition.AttributedModel.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\System.Composition.Convention.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\System.Composition.Hosting.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\System.Composition.Runtime.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\System.Composition.TypedParts.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.AssemblyInfoInputs.cache
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.AssemblyInfo.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.csproj.CoreCompileInputs.cache
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.RazorAssemblyInfo.cache
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.RazorAssemblyInfo.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\staticwebassets\ASPProject1.StaticWebAssets.Manifest.cache
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\staticwebassets\ASPProject1.StaticWebAssets.xml
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\scopedcss\bundle\ASPProject1.styles.css
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.TagHelpers.input.cache
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.TagHelpers.output.cache
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.RazorCoreGenerate.cache
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ResetPassword.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Messages\Create.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Messages\Delete.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Messages\Details.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Messages\Edit.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Messages\Index.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\News\Create.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\News\Delete.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\News\Details.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\News\Edit.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\News\Index.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Repertoires\Create.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Repertoires\Delete.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Repertoires\Details.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Repertoires\Edit.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Repertoires\Index.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Trophies\Create.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Trophies\Delete.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Trophies\Details.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Trophies\Edit.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Trophies\Index.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.RazorTargetAssemblyInfo.cache
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.RazorTargetAssemblyInfo.cs
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.Views.pdb
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.csproj.CopyComplete
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\ref\ASPProject1.dll
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.pdb
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.genruntimeconfig.cache
+C:\Users\student11\Desktop\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\News\Details1.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\appsettings.json
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\ASPProject1.StaticWebAssets.xml
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\ASPProject1.exe
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\ASPProject1.deps.json
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\ASPProject1.runtimeconfig.json
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\ASPProject1.runtimeconfig.dev.json
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\ASPProject1.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\ref\ASPProject1.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\ASPProject1.pdb
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\ASPProject1.Views.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\ASPProject1.Views.pdb
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Humanizer.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Facebook.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\System.Composition.AttributedModel.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\System.Composition.Convention.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\System.Composition.Hosting.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\System.Composition.Runtime.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\System.Composition.TypedParts.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.csproj.AssemblyReference.cache
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.AssemblyInfoInputs.cache
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.AssemblyInfo.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.csproj.CoreCompileInputs.cache
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.RazorAssemblyInfo.cache
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.RazorAssemblyInfo.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\staticwebassets\ASPProject1.StaticWebAssets.Manifest.cache
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\staticwebassets\ASPProject1.StaticWebAssets.xml
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\scopedcss\bundle\ASPProject1.styles.css
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.TagHelpers.input.cache
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.TagHelpers.output.cache
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.RazorCoreGenerate.cache
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ResetPassword.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Messages\Create.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Messages\Delete.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Messages\Details.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Messages\Edit.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Messages\Index.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\News\Create.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\News\Delete.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\News\Details.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\News\Details1.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\News\Edit.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\News\Index.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Repertoires\Create.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Repertoires\Delete.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Repertoires\Details.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Repertoires\Edit.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Repertoires\Index.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Trophies\Create.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Trophies\Delete.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Trophies\Details.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Trophies\Edit.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Trophies\Index.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.RazorTargetAssemblyInfo.cache
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.RazorTargetAssemblyInfo.cs
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.Views.pdb
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.csproj.CopyComplete
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\ref\ASPProject1.dll
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.pdb
+C:\Users\student11\Desktop\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.genruntimeconfig.cache
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\appsettings.Development.json
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\appsettings.json
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\ASPProject1.StaticWebAssets.xml
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\ASPProject1.exe
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\ASPProject1.deps.json
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\ASPProject1.runtimeconfig.json
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\ASPProject1.runtimeconfig.dev.json
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\ASPProject1.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\ref\ASPProject1.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\ASPProject1.pdb
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\ASPProject1.Views.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\ASPProject1.Views.pdb
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Humanizer.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Facebook.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\System.Composition.AttributedModel.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\System.Composition.Convention.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\System.Composition.Hosting.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\System.Composition.Runtime.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\System.Composition.TypedParts.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\System.Runtime.Caching.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\My Projects\ASP22\ASPProject1\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.csproj.AssemblyReference.cache
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.AssemblyInfoInputs.cache
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.AssemblyInfo.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.csproj.CoreCompileInputs.cache
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.MvcApplicationPartsAssemblyInfo.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.MvcApplicationPartsAssemblyInfo.cache
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.RazorAssemblyInfo.cache
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.RazorAssemblyInfo.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\staticwebassets\ASPProject1.StaticWebAssets.Manifest.cache
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\staticwebassets\ASPProject1.StaticWebAssets.xml
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\scopedcss\bundle\ASPProject1.styles.css
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.TagHelpers.input.cache
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.TagHelpers.output.cache
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.RazorCoreGenerate.cache
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ResetPassword.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Messages\Create.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Messages\Delete.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Messages\Details.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Messages\Edit.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Messages\Index.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\News\Create.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\News\Delete.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\News\Details.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\News\Details1.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\News\Edit.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\News\Index.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Repertoires\Create.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Repertoires\Delete.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Repertoires\Details.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Repertoires\Edit.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Repertoires\Index.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Trophies\Create.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Trophies\Delete.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Trophies\Details.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Trophies\Edit.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\Trophies\Index.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.RazorTargetAssemblyInfo.cache
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.RazorTargetAssemblyInfo.cs
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.Views.pdb
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.csproj.CopyComplete
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.dll
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\ref\ASPProject1.dll
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.pdb
+D:\My Projects\ASP22\ASPProject1\obj\Debug\net5.0\ASPProject1.genruntimeconfig.cache

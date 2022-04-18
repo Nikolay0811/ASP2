@@ -1,4 +1,7 @@
-﻿@model ASPProject1.Data.News
+﻿
+@using ASPProject1.Data
+@model ASPProject1.Models.NewsVM
+
 
 @{
     ViewData["Title"] = "Create";
@@ -22,15 +25,16 @@
                 <input asp-for="Text" class="form-control" />
                 <span asp-validation-for="Text" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Fotos" class="control-label"></label>
-                <input asp-for="Fotos" class="form-control" />
-                <span asp-validation-for="Fotos" class="text-danger"></span>
-            </div>
+
             <div class="form-group">
                 <label asp-for="Data" class="control-label"></label>
                 <input asp-for="Data" class="form-control" />
                 <span asp-validation-for="Data" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImagePath" class="control-label">Изображение</label>
+                <input asp-for="ImagePath" class="form-control-file" multiple />
+                <span asp-validation-for="ImagePath" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

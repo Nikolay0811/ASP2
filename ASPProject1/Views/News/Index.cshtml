@@ -18,9 +18,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Text)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Fotos)
-            </th>
+            
             <th>
                 @Html.DisplayNameFor(model => model.Data)
             </th>
@@ -36,11 +34,12 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Text)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Fotos)
-            </td>
+
             <td>
                 @Html.DisplayFor(modelItem => item.Data)
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.Id">I M A G E S</a>
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

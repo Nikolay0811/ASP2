@@ -71,7 +71,6 @@ namespace ASPProject1.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Text = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Fotos = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Data = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
@@ -241,6 +240,25 @@ namespace ASPProject1.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "NewsImages",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    ImagePath = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    NewsId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_NewsImages", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_NewsImages_Newes_NewsId",
+                        column: x => x.NewsId,
+                        principalTable: "Newes",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -284,6 +302,11 @@ namespace ASPProject1.Migrations
                 name: "IX_MessagesUser_UsersId",
                 table: "MessagesUser",
                 column: "UsersId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_NewsImages_NewsId",
+                table: "NewsImages",
+                column: "NewsId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -307,7 +330,7 @@ namespace ASPProject1.Migrations
                 name: "MessagesUser");
 
             migrationBuilder.DropTable(
-                name: "Newes");
+                name: "NewsImages");
 
             migrationBuilder.DropTable(
                 name: "Repertories");
@@ -323,6 +346,9 @@ namespace ASPProject1.Migrations
 
             migrationBuilder.DropTable(
                 name: "Messages2");
+
+            migrationBuilder.DropTable(
+                name: "Newes");
         }
     }
 }
