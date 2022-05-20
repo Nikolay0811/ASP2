@@ -1419,7 +1419,6 @@ D:\ASP2\ASPProject1\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-c
 D:\ASP2\ASPProject1\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 D:\ASP2\ASPProject1\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\ASP2\ASPProject1\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.csproj.AssemblyReference.cache
 D:\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.GeneratedMSBuildEditorConfig.editorconfig
 D:\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.AssemblyInfoInputs.cache
 D:\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.AssemblyInfo.cs
@@ -1479,3 +1478,4 @@ D:\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.dll
 D:\ASP2\ASPProject1\obj\Debug\net5.0\ref\ASPProject1.dll
 D:\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.pdb
 D:\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.genruntimeconfig.cache
+D:\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.csproj.AssemblyReference.cache

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -15,10 +16,9 @@ namespace ASPProject1.Models
         [Required(ErrorMessage = "This field is required")]
         public string Description { get; set; }
         [Required(ErrorMessage = "This field is required")]
-        public string Fotos { get; set; }
-        [Required(ErrorMessage = "Избери снимка от компютъра си...")]
         public DateTime Data { get; set; }
-        
+        public List<IFormFile> ImagePath1 { get; set; }
 
-}
+
+    }
 }

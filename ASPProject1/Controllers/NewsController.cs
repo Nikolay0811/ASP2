@@ -9,6 +9,7 @@ using ASPProject1.Data;
 using System.IO;
 using ASPProject1.Models;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ASPProject1.Controllers
 {
@@ -50,16 +51,17 @@ namespace ASPProject1.Controllers
             var imagePath = Path.Combine(wwwroot, "NewsImages");
             NewsDetailsVM modelVM = new NewsDetailsVM()
             {
-                Name = product.Name, 
+                Name = product.Name,
                 Text = product.Text,
-                Data= product.Data,
-               
+                Data = product.Data,
+
                 ImagesPaths = _context.NewsImages
                 .Where(img => img.NewsId == product.Id)
                 .Select(x => $"/NewsImages/{x.ImagePath}").ToList<string>()
             };
             return View(modelVM);
         }
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             return View();
@@ -70,21 +72,23 @@ namespace ASPProject1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([FromForm] NewsVM news)
         {
+            if (!ModelState.IsValid)
             {
-                if (!ModelState.IsValid)
-                {
-                    return View(news);
-                }
-
-                await this.CreateImages(news);
-
-                return RedirectToAction(nameof(Index));
+                return View(news);
             }
+
+
+            await this.CreateImages(news);
+
+            return RedirectToAction(nameof(Index));
+
         }
 
         // GET: News/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -113,17 +117,16 @@ namespace ASPProject1.Controllers
 
             return View(model);
         }
-       
-      
+
+        [Authorize(Roles = "Admin")]
         public async Task CreateImages(NewsVM model)
         {
             News productToDb = new News()
             {
                 Name = model.Name,
                 Text = model.Text,
-                Data=model.Data,
-                 
-            }; 
+                Data = DateTime.Now
+            };
             await _context.Newes.AddAsync(productToDb);
             await this._context.SaveChangesAsync();
 
@@ -163,6 +166,7 @@ namespace ASPProject1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Text,Fotos,Data")] News news)
         {
             if (id != news.Id)
@@ -192,9 +196,10 @@ namespace ASPProject1.Controllers
             }
             return View(news);
         }
-      
+
 
         // GET: News/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -215,6 +220,7 @@ namespace ASPProject1.Controllers
         // POST: News/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var news = await _context.Newes.FindAsync(id);

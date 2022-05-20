@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ASPProject1.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ASPProject1.Controllers
 {
@@ -41,7 +42,7 @@ namespace ASPProject1.Controllers
 
             return View(repertoire);
         }
-
+        [Authorize(Roles = "Admin")]
         // GET: Repertoires/Create
         public IActionResult Create()
         {
@@ -53,6 +54,7 @@ namespace ASPProject1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([Bind("Id,Name,Description,Video,Data")] Repertoire repertoire)
         {
             if (ModelState.IsValid)
@@ -63,7 +65,7 @@ namespace ASPProject1.Controllers
             }
             return View(repertoire);
         }
-
+        [Authorize(Roles = "Admin")]
         // GET: Repertoires/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -85,6 +87,7 @@ namespace ASPProject1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,Video,Data")] Repertoire repertoire)
         {
             if (id != repertoire.Id)
@@ -116,6 +119,7 @@ namespace ASPProject1.Controllers
         }
 
         // GET: Repertoires/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -136,6 +140,7 @@ namespace ASPProject1.Controllers
         // POST: Repertoires/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var repertoire = await _context.Repertories.FindAsync(id);

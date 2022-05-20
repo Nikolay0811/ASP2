@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ASPProject1.Migrations
 {
-    public partial class InitialMigration : Migration
+    public partial class da : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -259,6 +259,25 @@ namespace ASPProject1.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "TrophyImages",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    ImagePath1 = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    TrophyId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_TrophyImages", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_TrophyImages_Trophys_TrophyId",
+                        column: x => x.TrophyId,
+                        principalTable: "Trophys",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -307,6 +326,11 @@ namespace ASPProject1.Migrations
                 name: "IX_NewsImages_NewsId",
                 table: "NewsImages",
                 column: "NewsId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_TrophyImages_TrophyId",
+                table: "TrophyImages",
+                column: "TrophyId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -336,7 +360,7 @@ namespace ASPProject1.Migrations
                 name: "Repertories");
 
             migrationBuilder.DropTable(
-                name: "Trophys");
+                name: "TrophyImages");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
@@ -349,6 +373,9 @@ namespace ASPProject1.Migrations
 
             migrationBuilder.DropTable(
                 name: "Newes");
+
+            migrationBuilder.DropTable(
+                name: "Trophys");
         }
     }
 }

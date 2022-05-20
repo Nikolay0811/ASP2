@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ASPProject1.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220407201345_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20220520175242_da")]
+    partial class da
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -125,6 +125,25 @@ namespace ASPProject1.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Trophys");
+                });
+
+            modelBuilder.Entity("ASPProject1.Data.TrophyImages", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ImagePath1")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TrophyId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TrophyId");
+
+                    b.ToTable("TrophyImages");
                 });
 
             modelBuilder.Entity("ASPProject1.Data.User", b =>
@@ -362,6 +381,17 @@ namespace ASPProject1.Migrations
                     b.Navigation("News");
                 });
 
+            modelBuilder.Entity("ASPProject1.Data.TrophyImages", b =>
+                {
+                    b.HasOne("ASPProject1.Data.Trophy", "Trophy")
+                        .WithMany("TrophyImages")
+                        .HasForeignKey("TrophyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Trophy");
+                });
+
             modelBuilder.Entity("MessagesUser", b =>
                 {
                     b.HasOne("ASPProject1.Data.Messages", null)
@@ -431,6 +461,11 @@ namespace ASPProject1.Migrations
             modelBuilder.Entity("ASPProject1.Data.News", b =>
                 {
                     b.Navigation("NewsImages");
+                });
+
+            modelBuilder.Entity("ASPProject1.Data.Trophy", b =>
+                {
+                    b.Navigation("TrophyImages");
                 });
 #pragma warning restore 612, 618
         }

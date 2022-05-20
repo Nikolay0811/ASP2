@@ -6,12 +6,18 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ASPProject1.Data;
+using Microsoft.AspNetCore.Authorization;
+using System.IO;
+using ASPProject1.Models;
+using Microsoft.AspNetCore.Hosting;
 
 namespace ASPProject1.Controllers
 {
     public class TrophiesController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly IWebHostEnvironment _hostEnvironment;
+        private string wwwroot;
 
         public TrophiesController(ApplicationDbContext context)
         {
@@ -33,19 +39,75 @@ namespace ASPProject1.Controllers
             }
 
             var trophy = await _context.Trophys
+                .Include(img => img.TrophyImages)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (trophy == null)
             {
                 return NotFound();
             }
+            var imagePath1 = Path.Combine(wwwroot, "TrophyImages");
+            TrophyDetailsVM modelVM = new TrophyDetailsVM()
+            {
+                Name = trophy.Name,
+                Description = trophy.Description,
+                Data = trophy.Data,
 
-            return View(trophy);
+                ImagesPaths1 = _context.TrophyImages
+                .Where(img => img.TrophyId == trophy.Id)
+                .Select(x => $"/TrophyImages/{x.ImagePath1}").ToList<string>()
+            };
+            return View(modelVM);
+
+
         }
 
         // GET: Trophies/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             return View();
+        }
+        [Authorize(Roles = "Admin")]
+        public async Task CreateImages(TrophyVM model)
+        {
+            Trophy productToDb = new Trophy()
+            {
+                Name = model.Name,
+                Description = model.Description,
+                Data = DateTime.Now
+            };
+            await _context.Trophys.AddAsync(productToDb);
+            await this._context.SaveChangesAsync();
+
+            //var wwwroot = $"{this._hostEnvironment.WebRootPath}";
+            //създаваме папката images, ако не съществува
+            Directory.CreateDirectory($"{wwwroot}/TrophyImages/");
+            var imagePath1 = Path.Combine(wwwroot, "TrophyImages");
+            string uniqueFileName = null;
+            if (model.ImagePath1.Count > 0)
+            {
+                for (int i = 0; i < model.ImagePath1.Count; i++)
+                {
+                    TrophyImages dbImage = new TrophyImages()
+                    {
+                        TrophyId = productToDb.Id,
+                        Trophy = productToDb
+                    };//id се създава автоматично при създаване на обект
+                    if (model.ImagePath1[i] != null)
+                    {
+                        uniqueFileName = dbImage.Id + "_" + model.ImagePath1[i].FileName;
+                        string filePath = Path.Combine(imagePath1, uniqueFileName);
+                        using (Stream fileStream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await model.ImagePath1[i].CopyToAsync(fileStream);
+                        }
+
+                        dbImage.ImagePath1 = uniqueFileName;
+                        await _context.TrophyImages.AddAsync(dbImage);
+                        await this._context.SaveChangesAsync();
+                    }
+                }
+            }
         }
 
         // POST: Trophies/Create
@@ -53,6 +115,7 @@ namespace ASPProject1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([Bind("Id,Name,Description,Fotos,Data")] Trophy trophy)
         {
             if (ModelState.IsValid)
@@ -65,6 +128,7 @@ namespace ASPProject1.Controllers
         }
 
         // GET: Trophies/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -77,7 +141,20 @@ namespace ASPProject1.Controllers
             {
                 return NotFound();
             }
-            return View(trophy);
+            TrophyDetailsVM model = new TrophyDetailsVM
+            {
+                Id = trophy.Id,
+                Name = trophy.Name,
+                Description = trophy.Description,
+                Data = trophy.Data,
+
+                ImagesPaths1 = _context.TrophyImages
+                .Where(img => img.TrophyId == trophy.Id)
+                .Select(x => $"/TrophyImages/{x.ImagePath1}").ToList<string>()
+            };
+
+            return View(model);
+
         }
 
         // POST: Trophies/Edit/5
@@ -85,6 +162,7 @@ namespace ASPProject1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,Fotos,Data")] Trophy trophy)
         {
             if (id != trophy.Id)
@@ -116,6 +194,7 @@ namespace ASPProject1.Controllers
         }
 
         // GET: Trophies/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -136,6 +215,7 @@ namespace ASPProject1.Controllers
         // POST: Trophies/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var trophy = await _context.Trophys.FindAsync(id);
