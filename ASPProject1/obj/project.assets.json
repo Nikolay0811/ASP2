@@ -7486,11 +7486,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\My Projects\\ASP22\\ASPProject1\\ASPProject1.csproj",
+      "projectUniqueName": "D:\\ASP2\\ASPProject1\\ASPProject1.csproj",
       "projectName": "ASPProject1",
-      "projectPath": "D:\\My Projects\\ASP22\\ASPProject1\\ASPProject1.csproj",
+      "projectPath": "D:\\ASP2\\ASPProject1\\ASPProject1.csproj",
       "packagesPath": "C:\\Users\\student11\\.nuget\\packages\\",
-      "outputPath": "D:\\My Projects\\ASP22\\ASPProject1\\obj\\",
+      "outputPath": "D:\\ASP2\\ASPProject1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\student11\\AppData\\Roaming\\NuGet\\NuGet.Config",
