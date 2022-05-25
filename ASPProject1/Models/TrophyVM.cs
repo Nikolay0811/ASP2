@@ -17,7 +17,7 @@ namespace ASPProject1.Models
         public string Description { get; set; }
         [Required(ErrorMessage = "This field is required")]
         public DateTime Data { get; set; }
-        public List<IFormFile> ImagePath1 { get; set; }
+        public List<IFormFile> ImagePath { get; set; }
 
 
     }

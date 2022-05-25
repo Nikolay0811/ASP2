@@ -19,9 +19,11 @@ namespace ASPProject1.Controllers
         private readonly IWebHostEnvironment _hostEnvironment;
         private string wwwroot;
 
-        public TrophiesController(ApplicationDbContext context)
+        public TrophiesController(ApplicationDbContext context, IWebHostEnvironment hostEnvironment)
         {
             _context = context;
+            _hostEnvironment = hostEnvironment;
+            wwwroot = $"{this._hostEnvironment.WebRootPath}";
         }
 
         // GET: Trophies
@@ -38,7 +40,7 @@ namespace ASPProject1.Controllers
                 return NotFound();
             }
 
-            var trophy = await _context.Trophys
+            Trophy trophy = await _context.Trophys
                 .Include(img => img.TrophyImages)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (trophy == null)
@@ -52,9 +54,9 @@ namespace ASPProject1.Controllers
                 Description = trophy.Description,
                 Data = trophy.Data,
 
-                ImagesPaths1 = _context.TrophyImages
+                ImagesPaths = _context.TrophyImages
                 .Where(img => img.TrophyId == trophy.Id)
-                .Select(x => $"/TrophyImages/{x.ImagePath1}").ToList<string>()
+                .Select(x => $"/TrophyImages/{x.ImagePath}").ToList<string>()
             };
             return View(modelVM);
 
@@ -70,13 +72,13 @@ namespace ASPProject1.Controllers
         [Authorize(Roles = "Admin")]
         public async Task CreateImages(TrophyVM model)
         {
-            Trophy productToDb = new Trophy()
+            Trophy trophyToDb = new Trophy()
             {
                 Name = model.Name,
                 Description = model.Description,
                 Data = DateTime.Now
             };
-            await _context.Trophys.AddAsync(productToDb);
+            await _context.Trophys.AddAsync(trophyToDb);
             await this._context.SaveChangesAsync();
 
             //var wwwroot = $"{this._hostEnvironment.WebRootPath}";
@@ -84,25 +86,25 @@ namespace ASPProject1.Controllers
             Directory.CreateDirectory($"{wwwroot}/TrophyImages/");
             var imagePath1 = Path.Combine(wwwroot, "TrophyImages");
             string uniqueFileName = null;
-            if (model.ImagePath1.Count > 0)
+            if (model.ImagePath.Count > 0)
             {
-                for (int i = 0; i < model.ImagePath1.Count; i++)
+                for (int i = 0; i < model.ImagePath.Count; i++)
                 {
                     TrophyImages dbImage = new TrophyImages()
                     {
-                        TrophyId = productToDb.Id,
-                        Trophy = productToDb
+                        TrophyId = trophyToDb.Id,
+                        Trophy = trophyToDb
                     };//id се създава автоматично при създаване на обект
-                    if (model.ImagePath1[i] != null)
+                    if (model.ImagePath[i] != null)
                     {
-                        uniqueFileName = dbImage.Id + "_" + model.ImagePath1[i].FileName;
+                        uniqueFileName = dbImage.Id + "_" + model.ImagePath[i].FileName;
                         string filePath = Path.Combine(imagePath1, uniqueFileName);
                         using (Stream fileStream = new FileStream(filePath, FileMode.Create))
                         {
-                            await model.ImagePath1[i].CopyToAsync(fileStream);
+                            await model.ImagePath[i].CopyToAsync(fileStream);
                         }
 
-                        dbImage.ImagePath1 = uniqueFileName;
+                        dbImage.ImagePath = uniqueFileName;
                         await _context.TrophyImages.AddAsync(dbImage);
                         await this._context.SaveChangesAsync();
                     }
@@ -116,17 +118,18 @@ namespace ASPProject1.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Create([Bind("Id,Name,Description,Fotos,Data")] Trophy trophy)
+        public async Task<IActionResult> Create([FromForm] TrophyVM trophy)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                _context.Add(trophy);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(trophy);
-        }
+               return View(trophy);
+            } 
+            await this.CreateImages(trophy);
 
+            return RedirectToAction(nameof(Index));
+            
+        }
+      
         // GET: Trophies/Edit/5
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
@@ -148,9 +151,9 @@ namespace ASPProject1.Controllers
                 Description = trophy.Description,
                 Data = trophy.Data,
 
-                ImagesPaths1 = _context.TrophyImages
+                ImagesPaths = _context.TrophyImages
                 .Where(img => img.TrophyId == trophy.Id)
-                .Select(x => $"/TrophyImages/{x.ImagePath1}").ToList<string>()
+                .Select(x => $"/TrophyImages/{x.ImagePath}").ToList<string>()
             };
 
             return View(model);

@@ -19,11 +19,14 @@ namespace ASPProject1.Models
         public string Id { get; set; }
 
         [Required]
-        public int NewsId { get; set; }
+        public int TrophyId { get; set; }
 
-        public List<SelectListItem> News { get; set; }
+        public List<SelectListItem> Trophy { get; set; }
 
         [Required]
-        public IFormFile ImagePath1 { get; set; }
-    }
+        public IFormFile ImagePath { get; set; }
+
+
+    
+}
 }

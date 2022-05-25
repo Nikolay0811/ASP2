@@ -8,22 +8,20 @@ namespace ASPProject1.Data
 {
     public class TrophyImages
     {
-       
-            public TrophyImages()
-            {
-                this.Id = Guid.NewGuid().ToString();
-            }
-            [Key]
-            public string Id { get; set; }
-            [Required]
-            public string ImagePath1 { get; set; }
+        public TrophyImages()
+        {
+            this.Id = Guid.NewGuid().ToString();
+        }
+        [Key]
+        public string Id { get; set; }
+        [Required]
+        public string ImagePath { get; set; }
 
-            //wrazka M:1
-            [Required]
-            //[ForeignKey("Product")]
-            public int TrophyId { get; set; }
+        //wrazka M:1
+        [Required]
+        //[ForeignKey("Product")]
+        public int TrophyId { get; set; }
 
-            public Trophy Trophy { get; set; }
+        public Trophy Trophy { get; set; }
     }
-    
 }
