@@ -23,23 +23,18 @@ namespace ASPProject1.Controllers
         {
             _context = context;
             _hostEnvironment = hostEnvironment;
-            wwwroot = $"{this._hostEnvironment.WebRootPath}";
-        }
+        } 
 
-        // GET: News
         public async Task<IActionResult> Index()
         {
             return View(await _context.Newes.ToListAsync());
         }
-
-        // GET: News/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
-
             News product = await _context.Newes
                 .Include(img => img.NewsImages)
                 .FirstOrDefaultAsync(m => m.Id == id);
@@ -47,7 +42,6 @@ namespace ASPProject1.Controllers
             {
                 return NotFound();
             }
-
             var imagePath = Path.Combine(wwwroot, "NewsImages");
             NewsDetailsVM modelVM = new NewsDetailsVM()
             {
@@ -66,10 +60,6 @@ namespace ASPProject1.Controllers
         {
             return View();
         }
-
-        // POST: News/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
@@ -86,23 +76,18 @@ namespace ASPProject1.Controllers
             return RedirectToAction(nameof(Index));
 
         }
-
-        // GET: News/Edit/5
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
             {
                 return NotFound();
-            }
-            //1. зареждам искания id от БД .... за промяна на стойностите
+            }           
             var product = await _context.Newes.FindAsync(id);
             if (product == null)
             {
                 return NotFound();
             }
-            //2. Създавм модела, с който ще визуализирам за промяна на стойностите
-            //3. Пълня от БД в полетата на екрана
             NewsDetailsVM model = new NewsDetailsVM
             {
                 Id = product.Id,
@@ -117,7 +102,6 @@ namespace ASPProject1.Controllers
 
             return View(model);
         }
-
         [Authorize(Roles = "Admin")]
         public async Task CreateImages(NewsVM model)
         {
@@ -129,9 +113,6 @@ namespace ASPProject1.Controllers
             };
             await _context.Newes.AddAsync(productToDb);
             await this._context.SaveChangesAsync();
-
-            //var wwwroot = $"{this._hostEnvironment.WebRootPath}";
-            //създаваме папката images, ако не съществува
             Directory.CreateDirectory($"{wwwroot}/NewsImages/");
             var imagePath = Path.Combine(wwwroot, "NewsImages");
             string uniqueFileName = null;
@@ -143,7 +124,7 @@ namespace ASPProject1.Controllers
                     {
                         NewsId = productToDb.Id,
                         News = productToDb
-                    };//id се създава автоматично при създаване на обект
+                    };
                     if (model.ImagePath[i] != null)
                     {
                         uniqueFileName = dbImage.Id + "_" + model.ImagePath[i].FileName;
@@ -160,10 +141,6 @@ namespace ASPProject1.Controllers
                 }
             }
         }
-
-        // POST: News/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
@@ -196,9 +173,6 @@ namespace ASPProject1.Controllers
             }
             return View(news);
         }
-
-
-        // GET: News/Delete/5
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
@@ -216,8 +190,6 @@ namespace ASPProject1.Controllers
 
             return View(news);
         }
-
-        // POST: News/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]

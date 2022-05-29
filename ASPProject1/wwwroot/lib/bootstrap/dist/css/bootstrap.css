@@ -100,7 +100,7 @@ address {
   line-height: inherit;
 }
 
-ol,
+/*ol,
 ul,
 dl {
   margin-top: 0;
@@ -112,7 +112,7 @@ ul ul,
 ol ul,
 ul ol {
   margin-bottom: 0;
-}
+}*/
 
 dt {
   font-weight: 700;
@@ -152,16 +152,16 @@ sup {
   top: -.5em;
 }
 
-a {
+/*a {
   color: #007bff;
   text-decoration: none;
   background-color: transparent;
 }
 
-a:hover {
-  color: #0056b3;
-  text-decoration: underline;
-}
+    a:hover {
+        color: #0056b3;
+        text-decoration: underline;
+    }
 
 a:not([href]):not([tabindex]) {
   color: inherit;
@@ -174,7 +174,7 @@ a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
 }
 
 a:not([href]):not([tabindex]):focus {
-  outline: 0;
+  outline: 0;*/
 }
 
 pre,

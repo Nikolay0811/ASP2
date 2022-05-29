@@ -13,7 +13,6 @@ namespace ASPProject1.Models
         [Required(ErrorMessage = "This field is required")]
         public string Message { get; set; }
         public DateTime DateMess { get; set; }
-
         public virtual ICollection<User> Users { get; set; }
     }
 }

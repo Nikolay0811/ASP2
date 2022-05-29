@@ -10,7 +10,6 @@ namespace ASPProject1.Data
         public int Id { get; set; }
         public string Message { get; set; }
         public DateTime DateMess { get; set; }
-
         public virtual ICollection<User> Users { get; set; }
     }
 }

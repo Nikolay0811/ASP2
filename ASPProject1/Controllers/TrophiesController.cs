@@ -25,21 +25,16 @@ namespace ASPProject1.Controllers
             _hostEnvironment = hostEnvironment;
             wwwroot = $"{this._hostEnvironment.WebRootPath}";
         }
-
-        // GET: Trophies
         public async Task<IActionResult> Index()
         {
             return View(await _context.Trophys.ToListAsync());
         }
-
-        // GET: Trophies/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
-
             Trophy trophy = await _context.Trophys
                 .Include(img => img.TrophyImages)
                 .FirstOrDefaultAsync(m => m.Id == id);
@@ -59,11 +54,7 @@ namespace ASPProject1.Controllers
                 .Select(x => $"/TrophyImages/{x.ImagePath}").ToList<string>()
             };
             return View(modelVM);
-
-
         }
-
-        // GET: Trophies/Create
         [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
@@ -80,9 +71,6 @@ namespace ASPProject1.Controllers
             };
             await _context.Trophys.AddAsync(trophyToDb);
             await this._context.SaveChangesAsync();
-
-            //var wwwroot = $"{this._hostEnvironment.WebRootPath}";
-            //създаваме папката images, ако не съществува
             Directory.CreateDirectory($"{wwwroot}/TrophyImages/");
             var imagePath1 = Path.Combine(wwwroot, "TrophyImages");
             string uniqueFileName = null;
@@ -111,10 +99,6 @@ namespace ASPProject1.Controllers
                 }
             }
         }
-
-        // POST: Trophies/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
@@ -129,8 +113,6 @@ namespace ASPProject1.Controllers
             return RedirectToAction(nameof(Index));
             
         }
-      
-        // GET: Trophies/Edit/5
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
@@ -155,14 +137,8 @@ namespace ASPProject1.Controllers
                 .Where(img => img.TrophyId == trophy.Id)
                 .Select(x => $"/TrophyImages/{x.ImagePath}").ToList<string>()
             };
-
             return View(model);
-
         }
-
-        // POST: Trophies/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
@@ -195,8 +171,6 @@ namespace ASPProject1.Controllers
             }
             return View(trophy);
         }
-
-        // GET: Trophies/Delete/5
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
@@ -214,8 +188,6 @@ namespace ASPProject1.Controllers
 
             return View(trophy);
         }
-
-        // POST: Trophies/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
@@ -226,7 +198,6 @@ namespace ASPProject1.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
         private bool TrophyExists(int id)
         {
             return _context.Trophys.Any(e => e.Id == id);

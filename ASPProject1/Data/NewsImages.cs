@@ -16,12 +16,8 @@ namespace ASPProject1.Data
         public string Id { get; set; }
         [Required]
         public string ImagePath { get; set; }
-
-        //wrazka M:1
         [Required]
-        //[ForeignKey("Product")]
         public int NewsId { get; set; }
-
         public News News{ get; set; }
             
     }

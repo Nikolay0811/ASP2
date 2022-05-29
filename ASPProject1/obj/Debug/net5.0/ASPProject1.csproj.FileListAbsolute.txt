@@ -1479,3 +1479,6 @@ D:\ASP2\ASPProject1\obj\Debug\net5.0\ref\ASPProject1.dll
 D:\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.pdb
 D:\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.genruntimeconfig.cache
 D:\ASP2\ASPProject1\obj\Debug\net5.0\ASPProject1.csproj.AssemblyReference.cache
+D:\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Home\Contacts.cshtml.g.cs
+D:\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Home\Sponsors.cshtml.g.cs
+D:\ASP2\ASPProject1\obj\Debug\net5.0\Razor\Views\Home\Galery.cshtml.g.cs

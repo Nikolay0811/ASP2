@@ -4,8 +4,12 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
 
+<div class="inf ">
+    <h2 id="title1" class="title">ФА Розова Долина</h2>
+    <h1 id="title2" class="title">Новини</h1>
+    <p class="text">В тази страница ще намерите най-актуалните новини за насамбъла. <br />Кaто бъдещи и минали изяви </p>
+</div>
 <p>
     <a asp-action="Create">Create New</a>
 </p>
@@ -18,7 +22,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Text)
             </th>
-            
+
             <th>
                 @Html.DisplayNameFor(model => model.Data)
             </th>
@@ -26,27 +30,74 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Text)
-            </td>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Text)
+                </td>
 
-            <td>
-                @Html.DisplayFor(modelItem => item.Data)
-            </td>
-            <td>
-                <a asp-action="Details" asp-route-id="@item.Id">I M A G E S</a>
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+                <td>
+                    @Html.DisplayFor(modelItem => item.Data)
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id">I M A G E S</a>
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+<body>
+
+    <div class="news">
+        <div id="images-5">
+            <div id="images-6">
+                <h1>Полша 06.06.2022г.до 13.06.2022г.</h1>
+
+                <p id="news-text">
+                    Концерта ще се състои заедно с ФА "Загоре"<br />
+                    по случай годишнините на ансамблите.<br />
+                    В НЧ "Васил Левски" 1861г. гр. Карлово от 19:00.<br />
+                    <br />
+                </p>
+                <h1 id="news-bilet">Билети на касата</h1>
+            </div>
+        </div>
+        <div id="images-3">
+            <div id="images-4">
+                <h1> Празник на розата 28.05.2022г.</h1>
+
+                <p id="news-text">
+                    Концерта ще се състои в Карлово на две места.<br />
+                    Като той започва край нивите на град Карлово.<br />
+                    И продължава на площада.Започвайки от сутринта в 9:00<br />
+                    <br />
+                </p>
+                <h1 id="news-bilet">Билети не се закупуват</h1>
+            </div>
+        </div>
+        <div id="images-1">
+            <div id="images-2">
+                <h1>Карлово 18.05.2022г.</h1>
+
+                <p id="news-text">
+                    Концерта ще се състои заедно с ФА "Загоре"<br />
+                    по случай годишнините на ансамблите.<br />
+                    В НЧ "Васил Левски" 1861г. гр. Карлово от 19:00.<br />
+                    <br />
+                </p>
+                <h1 id="news-bilet">Билети на касата</h1>
+            </div>
+        </div>
+    </div>
+
+</body>
+

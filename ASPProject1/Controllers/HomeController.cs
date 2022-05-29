@@ -22,6 +22,18 @@ namespace ASPProject1.Controllers
         {
             return View();
         }
+        public IActionResult Galery()
+        {
+            return View();
+        }
+        public IActionResult Contacts()
+        {
+            return View();
+        }
+        public IActionResult Sponsors()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {

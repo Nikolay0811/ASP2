@@ -14,19 +14,12 @@ namespace ASPProject1.Models
         {
             this.Id = Guid.NewGuid().ToString();
         }
-
         [Key]
         public string Id { get; set; }
-
         [Required]
         public int TrophyId { get; set; }
-
         public List<SelectListItem> Trophy { get; set; }
-
         [Required]
-        public IFormFile ImagePath { get; set; }
-
-
-    
-}
+        public IFormFile ImagePath { get; set; }    
+    }
 }

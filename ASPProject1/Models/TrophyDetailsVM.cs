@@ -12,8 +12,7 @@ namespace ASPProject1.Models
         [Required(ErrorMessage = "This field is required")]
         public string Name { get; set; }
         [Required(ErrorMessage = "This field is required")]
-        public string Description { get; set; }
-        
+        public string Description { get; set; }        
         public DateTime Data { get; set; }
         public List<string> ImagesPaths { get; internal set; }
 
