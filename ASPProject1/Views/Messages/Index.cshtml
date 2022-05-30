@@ -4,10 +4,13 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
+<div class="inf ">
+    <h2 id="title1" class="title">ФА Розова Долина</h2>
+    <h1 id="title2" class="title">Съобщения</h1>
+    <p class="text">В тази страница имаш възможност да изпратиш. <br />Съобщение за частно-участие </p>
+</div>
+<p class="create-new">
+    <a asp-action="Create">Изпрати съобщение</a>
 </p>
 <table class="table">
     <thead>
@@ -22,20 +25,25 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Message)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateMess)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Message)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateMess)
+                </td>
+                <td>
+                    <a class="buttons" asp-action="Edit" asp-route-id="@item.Id">Обнови</a>
+                    <a class="buttons" asp-action="Details" asp-route-id="@item.Id">Преглед</a>
+                    <a class="buttons" asp-action="Delete" asp-route-id="@item.Id">Изтрий</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+<footer id="Messages-footer">
+    <a class="footer1" asp-area="" asp-controller="Home" asp-action="Contacts"> &copy; 2022 -Розова Долина-Контакти</a>
+</footer>
+

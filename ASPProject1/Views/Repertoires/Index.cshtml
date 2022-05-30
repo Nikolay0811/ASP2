@@ -4,11 +4,16 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
+
+<p class="create-new">
+    <a asp-action="Create">Създай</a>
 </p>
+<div class="inf ">
+    <h2 id="title1" class="title">ФА Розова Долина</h2>
+    <h1 id="title2" class="title">Репертoар</h1>
+    <p class="text">Тази страница ще ви предостави видеа. <br />За танците на ансамбъла </p>
+</div>
 <table class="table">
     <thead>
         <tr>
@@ -28,26 +33,104 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Video)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Data)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Video)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Data)
+                </td>
+                <td>
+                    <a class="buttons" asp-action="Edit" asp-route-id="@item.Id">Обнови</a>
+                    <a class="buttons" asp-action="Details" asp-route-id="@item.Id">Преглед</a>
+                    <a class="buttons" asp-action="Delete" asp-route-id="@item.Id">Изтрий</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+<div class="videos">
+    <div class="video">
+        <table class="table1" border="5" cellpadding="10" cellspacing="0">
+            <tr>
+                <td style="text-align: center; background-color: #04823f" colspan="1">Шопски танц</td>
+                <td style="text-align: center; background-color: #04823f" colspan="1">Тракийски танц</td>
+
+
+            </tr>
+            <tr>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Xcv8k3nArB8" title="YouTube video player"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </td>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KjzKQCZuUDs" title="YouTube video player"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </td>
+
+            </tr>
+
+        </table>
+    </div>
+    <div class="video">
+        <table table class="table1" border="5" cellpadding="10" cellspacing="0">
+            <tr>
+                <td style="text-align: center; background-color: #04823f" colspan="1">Добруджански танц</td>
+                <td style="text-align: center; background-color: #04823f" colspan="1">Пирински танц</td>
+            </tr>
+            <tr>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BirGqNkaKLA" title="YouTube video player"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </td>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JNM0kdbpyGc" title="YouTube video player"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div class="video">
+        <table border="5" cellpadding="10" cellspacing="0">
+            <tr>
+
+                <td style="text-align: center; background-color: #04823f" colspan="1">Северняшки танц</td>
+                <td style="text-align: center; background-color: #04823f" colspan="1">Родопски танц</td>
+
+
+            </tr>
+            <tr>
+
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wXNH1gMYzzU" title="YouTube video player"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </td>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RPUKP5SvWVA" title="YouTube video player"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+</div>
+<footer id="Repertoire-footer">
+    <a class="footer1" asp-area="" asp-controller="Home" asp-action="Contacts"> &copy; 2022 -Розова Долина-Контакти</a>
+</footer>

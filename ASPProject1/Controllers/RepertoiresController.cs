@@ -48,11 +48,17 @@ namespace ASPProject1.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([Bind("Id,Name,Description,Video,Data")] Repertoire repertoire)
         {
+            Repertoire repertoire1 = new Repertoire()
+            {
+                Data = DateTime.Now
+            };
+
             if (ModelState.IsValid)
             {
                 _context.Add(repertoire);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
+                
             }
             return View(repertoire);
         }

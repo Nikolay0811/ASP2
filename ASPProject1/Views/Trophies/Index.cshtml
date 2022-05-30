@@ -4,11 +4,16 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
+
+<p class="create-new">
+    <a asp-action="Create">Създай</a>
 </p>
+<div class="inf ">
+    <h2 id="title1" class="title">ФА Розова Долина</h2>
+    <h1 id="title2" class="title">Награди</h1>
+    <p class="text">Тук можем да видим постиженията на ансамбъла.</p>
+</div>
 <table class="table">
     <thead>
         <tr>
@@ -18,7 +23,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Description)
             </th>
-       
+
             <th>
                 @Html.DisplayNameFor(model => model.Data)
             </th>
@@ -26,28 +31,34 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-           
-            <td>
-                @Html.DisplayFor(modelItem => item.Data)
-            </td>
-            <td>
-                <a asp-action="Details" asp-route-id="@item.Id">I M A G E S</a>
-            </td>
-            <td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Data)
+                </td>
+                <td class="buttons-td">
+                    <a class="buttons" asp-action="Details" asp-route-id="@item.Id">Снимки</a>
+                </td>
+                <td>
+                <td class="buttons-td">
+                    <a class="buttons" asp-action="Edit" asp-route-id="@item.Id">Обнови</a>
+                    <a class="buttons" asp-action="Details" asp-route-id="@item.Id">Преглед</a>
+                    <a class="buttons" asp-action="Delete" asp-route-id="@item.Id">Изтрий</a>
+
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+<footer id="Trophy-footer">
+    <a class="footer1" asp-area="" asp-controller="Home" asp-action="Contacts"> &copy; 2022 -Розова Долина-Контакти</a>
+</footer>
+

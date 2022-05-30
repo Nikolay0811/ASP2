@@ -10,53 +10,55 @@
     <script src="~/js/lightbox-plus-jquery.min.js" ></script>
 </head>
 <body>
-    <header>
-        <ul class="navbar1">
+    <div class="content">
+        <header>
+            <ul class="navbar1">
 
-            <li class="nav-item1">
-                <a class="nav-link-b1" asp-area="" asp-controller="Home" asp-action="Index"><img id="logoo" src="~/images/logo.jpg" /></a>
-            </li>
-            <li class="nav-item2">
-                <a class="nav-link1 " asp-area="" asp-controller="Home" asp-action="Index">За Ансамбъла</a>
-            </li>
-            <li class="nav-item2">
-                <a class="nav-link1" asp-area="" asp-controller="News" asp-action="">Новини</a>
-            </li>
-            <li class="nav-item2">
-                <a class="nav-link1" asp-area="" asp-controller="Repertoires" asp-action="">Репертoар</a>
-            </li>
-            <li class="nav-item2">
-                <a class="nav-link1" asp-area="" asp-controller="Trophies" asp-action="">Награди</a>
-            </li>
-            <li class="nav-item2">
-                <a class="nav-link1" asp-area="" asp-controller="Messages" asp-action="">Съобщения</a>
-            </li>
-            <li class="nav-item2">
-                <a class="nav-link1" asp-area="" asp-controller="Home" asp-action="Galery">Галерия</a>
-            </li>
-            <li class="nav-item2">
-                <a class="nav-link1" asp-area="" asp-controller="Home" asp-action="Contacts">Контанти</a>
-            <li class="nav-item2">
-                <a class="nav-link1" asp-area="" asp-controller="Home" asp-action="Sponsors">Спонсори</a>
-            </li>
-            <partial name="_LoginPartial" />
-        </ul>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+                <li class="nav-item1">
+                    <a class="nav-link-b1" asp-area="" asp-controller="Home" asp-action="Index"><img id="logoo" src="~/images/logo.jpg" /></a>
+                </li>
+                <li class="nav-item2">
+                    <a class="nav-link1 " asp-area="" asp-controller="Home" asp-action="Index">За Ансамбъла</a>
+                </li>
+                <li class="nav-item2">
+                    <a class="nav-link1" asp-area="" asp-controller="News" asp-action="">Новини</a>
+                </li>
+                <li class="nav-item2">
+                    <a class="nav-link1" asp-area="" asp-controller="Repertoires" asp-action="">Репертoар</a>
+                </li>
+                <li class="nav-item2">
+                    <a class="nav-link1" asp-area="" asp-controller="Trophies" asp-action="">Награди</a>
+                </li>
+                <li class="nav-item2">
+                    <a class="nav-link1" asp-area="" asp-controller="Messages" asp-action="">Съобщения</a>
+                </li>
+                <li class="nav-item2">
+                    <a class="nav-link1" asp-area="" asp-controller="Home" asp-action="Galery">Галерия</a>
+                </li>
+                <li class="nav-item2">
+                    <a class="nav-link1" asp-area="" asp-controller="Home" asp-action="Contacts">Контанти</a>
+                <li class="nav-item2">
+                    <a class="nav-link1" asp-area="" asp-controller="Home" asp-action="Sponsors">Спонсори</a>
+                </li>
+                <partial name="_LoginPartial" />
+            </ul>
 
-        <footer class="footer">
+        </header>
+        <main>
             <div class="container">
-                &copy; 2022 -Розова Долина- <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                <main class="pb-3">
+                    @RenderBody()
+                </main>
             </div>
-        </footer>
-  
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+        </main>
+      
+
+
+
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @await RenderSectionAsync("Scripts", required: false)
+    </div>
 </body>
 </html>

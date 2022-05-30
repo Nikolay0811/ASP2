@@ -1,27 +1,42 @@
-﻿body {
-    margin:0;
-    background-color: #f5f3f3; 
+﻿html{
+    height:100%;
+}
+body {
+    margin: 0;
+    background-color: #f5f3f3;
+    min-height: 100%;
+    display: flex;
+    flex-direction:column 
+   
+}
+.content{
 }
 .table {
-    width: 100%;
-    margin-bottom: 1rem;
+    position:absolute;
+    top:640px;    
+    width: 100%;  
     color: #212529;
+    margin-bottom:40px; 
+    
 }
+
 
     .table th,
     .table td {
         padding: 0.75rem;
         vertical-align: top;
         border-top: 1px solid #dee2e6;
+        border-color:#f68332;
+        font-size:20px;    
     }
 
     .table thead th {
         vertical-align: bottom;
-        border-bottom: 2px solid #dee2e6;
+        border-bottom: 2px solid #f68332;
     }
 
     .table tbody + tbody {
-        border-top: 2px solid #dee2e6;
+        border-top: 2px solid #f68332;
     }
 
 .table-sm th,
@@ -30,7 +45,7 @@
 }
 
 .table-bordered {
-    border: 1px solid #dee2e6;
+    border: 1px solid #f68332;
 }
 
     .table-bordered th,
@@ -348,8 +363,43 @@
     .table-responsive > .table-bordered {
         border: 0;
     }
+.pb-3,
+.py-3 {    
+    padding-bottom: 1rem !important;
+}
+.buttons {
+    display: inline;
+    color: #000;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: color 3000ms ease
+}
+.buttons:hover{
+    color:#04823f;
+    transition: color 500ms ease
+}
 
-
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+}
+.col-md-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+.videos {
+    position:absolute;
+    top: 950px;
+    left:170px;
+    background-color: #f68332;
+    border-color: rgb(193, 40, 40)
+}
 .navbar1 {
     margin:0;
     place-items: center;
@@ -391,15 +441,25 @@
     transition: transform 500ms ease;
 }
 
-.nav-item2:hover {
-   
+.nav-item2:hover {  
     cursor: pointer;
 }
-
-
-
-
-
+.create-new{
+position:absolute;
+top:580px;
+left:25px;
+}
+    .create-new a {
+        text-decoration: none;
+        color: #000;
+        transition: color 300ms ease;
+        font-size:1.3em
+           
+    }
+.create-new a:hover {
+    color: #04823f;
+    transition: color 500ms ease
+}
 .nav-item1 {
     list-style: none;
 }
@@ -407,15 +467,6 @@
 .nav-link-b1:hover {
     cursor: pointer
 }
-
-
-
-/*
-
-.container {
-    width: 500px;
-    height: 200px;
-}*/
 /* feojfeojeojeofj*/
 .slider {
     margin-top:20px;
@@ -423,11 +474,8 @@
     width: 1100px;
     height: 600px;
     border-radius: 10px;
-    overflow: hidden;
-   /* margin-left: auto;
-    margin-right: auto;*/
+    overflow: hidden;  
 }
-
 .slides {
     width: 500%;
     height: 600px;
@@ -597,7 +645,7 @@
     margin-left: 150px;
 }
 
-.news {
+/*.news {
     position: relative;
     top: 300px;
     left: auto;
@@ -696,7 +744,7 @@
 
 #news-bilet {
     margin-top: 0;
-}
+}*/
 .gallery{    
     position:absolute;
     top:650px;   
@@ -742,15 +790,10 @@
     left:100px
 }
 
- .footer{
-    color: #fff;
-    background-color:aqua
- }
 .contacts {
     position: relative;
     top: 550px; 
-    left:290px
-    
+    left:290px;    
 }
 .contacts-adres { 
     position:absolute;
@@ -781,3 +824,52 @@
 .contacts-text {
     font-size: 1.5em;
 }
+footer{
+    height:55px;
+    background-color:#f68332;  
+    text-align:center;
+    width:1500px;
+    padding-top:35px;
+ }  
+.footer1{
+  text-decoration:none;
+  color:#000;  
+  font-size:1.1em
+}
+#Contacts-footer{
+    position:absolute;
+    top:900px
+}
+#Sponsors-footer {
+    position: absolute;
+    top: 900px
+}
+#Messages-footer {
+    position: absolute;
+    top: 1000px
+}
+#Repertoire-footer {
+    position: absolute;
+    top: 2200px
+}
+#News-footer {
+    position: absolute;
+    top: 1000px
+}
+#Trophy-footer {
+    position: absolute;
+    top: 900px
+}
+#Galery-footer {
+    position: absolute;
+    top: 1200px
+}
+#Home-footer {
+    position: absolute;
+    top: 1100px
+}
+
+
+
+
+

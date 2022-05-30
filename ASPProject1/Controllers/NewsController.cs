@@ -23,6 +23,7 @@ namespace ASPProject1.Controllers
         {
             _context = context;
             _hostEnvironment = hostEnvironment;
+            wwwroot = $"{this._hostEnvironment.WebRootPath}";
         } 
 
         public async Task<IActionResult> Index()
@@ -69,8 +70,6 @@ namespace ASPProject1.Controllers
             {
                 return View(news);
             }
-
-
             await this.CreateImages(news);
 
             return RedirectToAction(nameof(Index));
